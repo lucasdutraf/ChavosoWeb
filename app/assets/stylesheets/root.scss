@@ -3,6 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    background: url(/assets/bg-pattern-gray.jpg) no-repeat fixed center / cover;
+    background: url(/assets/bg-barber.jpg) no-repeat fixed center / cover;
 }
 
+.chavoso-logo {
+
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
