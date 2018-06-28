@@ -30,6 +30,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#User auth
+gem 'devise'
+
+#Adding better errors gems
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
 #Continuous integration config start
 
 #Code analyzer and style guide
