@@ -5,31 +5,43 @@ body {
 }
 
 .chavoso-logo {
-
     position: absolute;
     height: 100%;
     top: 0;
     bottom: 0;
-    
 }
 
 .field {
-
     background-color: white;
 }
 
 .devise {
-    margin-right: 50px;
+    margin-left: 35px;
 }
 
 .devise-bg {
-    
     width: 20%;
     margin: 0 auto;
     margin-top: 300px;
     margin-right: 80px;
     border: 2px solid white;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .4); 
     border-radius: 80px;
     padding: 50px;
+}
+
+.field {
+    background-color: rgba(255, 255, 255, .0);
+} 
+
+
+.devise-form-label {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.devise-title {
+    font-size: 50px;
+    font-family: 'Raleway';
+       
 }
