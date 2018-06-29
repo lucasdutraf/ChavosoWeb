@@ -3,14 +3,14 @@
 <section class="devise-bg">
   <div class="devise"> 
 
-    <h2>Forgot your password?</h2>
+    <h2 class="devise-title">Forgot your password?</h2>
 
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field">
         <%= f.label :email, :class => 'devise-form-label' %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'devise-form-input' %>
       </div>
 
       <div class="actions">
