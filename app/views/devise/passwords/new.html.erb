@@ -1,0 +1,25 @@
+
+<img src="/assets/index-logo.jpg" class="chavoso-logo"/>  
+<section class="devise-bg">
+  <div class="devise"> 
+
+    <h2 class="devise-title">Forgot your password?</h2>
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label :email, :class => 'devise-form-label' %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'devise-form-input' %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Send me reset password instructions", :class => 'devise-form-btn' %>
+      </div>
+    <% end %>
+
+    <div class="top-space"></div>
+    <%= render "devise/shared/links" %>
+    <div class="bottom-space"></div>
+  </div>
+</section>

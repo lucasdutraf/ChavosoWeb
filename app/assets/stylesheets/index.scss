@@ -1,0 +1,139 @@
+
+$yellow-logo-color: #E4C842;
+$bg-gray-color: #2F2E33;
+$txt-gray-color: rgb(158, 162, 173);
+$input-color: rgba(73, 73, 73, 0.4);
+$border-gray-color: rgb(124, 124, 124);
+
+body {
+    background-color: $bg-gray-color;
+}
+
+.chavoso-logo {
+    width: 100%;
+}
+
+.devise-bg {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .1);
+    border: 5px solid $border-gray-color;
+    border-radius: 100px;
+    @media screen and (max-width: 1580px) {
+        width: 60%;
+    }
+    @media screen and (max-width: 990px){
+        margin-top: 150px;
+        width: 70%;
+    }
+}
+
+.devise {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.field {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 800px;
+    @media screen and (max-width: 1580px) {
+        width: 500px;
+    }
+    @media screen and (max-width: 990px){
+        width: 300px;
+    }
+}
+
+.devise-title {
+    font: normal 7em 'Raleway', sans-serif;
+    text-align: center;
+    color: $txt-gray-color;
+    text-shadow: 0px 8px 10px black;
+}
+
+.devise-form-label {
+    font: normal 3em 'Ralaway', sans-serif;
+    color: $txt-gray-color;
+    text-shadow: 0px 3px 3px black;
+}
+
+.devise-form-input {
+    background-color: $input-color;
+    border: 3px solid $border-gray-color;    
+    border-radius: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+.check-box {
+    width: 20px;
+    height: 20px;
+}
+
+.check-box-lbl {
+    font: normal 2em 'Ralaway', sans-serif;
+    color: $txt-gray-color;
+    text-shadow: 0px 3px 3px black;
+}
+
+.devise-form-btn {
+    margin-top: 10px;
+    font: normal 2em 'Ralaway', sans-serif;
+    color: $txt-gray-color;
+    border: 3px dashed $border-gray-color;
+    background-color: $input-color;
+    font-size: 30px;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px black;
+    @media screen and (max-width: 1580px) {
+        width: 500px;
+        font-size: 1.5em;
+    }
+    @media screen and (max-width: 990px){
+        width: 300px;
+        font-size: 1em;
+    }
+}
+
+
+.sign-up-link, .log-in-link , .forgot-pass-link {
+    color: $txt-gray-color;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: $input-color;
+    border: 3px dashed $border-gray-color;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 800px;
+    margin-top: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px black;
+    @media screen and (max-width: 1580px) {
+        width: 500px;
+    }
+    @media screen and (max-width: 990px){
+        width: 300px;
+    }
+}
+
+.bottom-space {
+    width: 800px;
+    margin-bottom: 70px;
+}
+
+.top-space {
+    margin-top: 20px;
+}
+
+input {
+    font-size: 20px;
+    outline-color: white;
+    outline: none;
+    color: white;
+}
