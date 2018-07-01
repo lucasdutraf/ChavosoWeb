@@ -131,7 +131,9 @@ body {
     margin-top: 20px;
 }
 
-input, select, textarea{
-    color: white;
+input {
     font-size: 20px;
+    outline-color: white;
+    outline: none;
+    color: white;
 }
