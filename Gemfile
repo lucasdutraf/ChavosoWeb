@@ -39,16 +39,6 @@ group :development do
   gem "binding_of_caller"
 end
 
-#Continuous integration config start
-
-#Code analyzer and style guide
-gem 'rubocop', require: false
-
-#For RSpec test cases
-gem 'rspec-rails'
-
-
-#Continuos integration config end
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
