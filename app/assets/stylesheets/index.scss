@@ -137,3 +137,33 @@ input {
     outline: none;
     color: white;
 }
+
+
+.try-the-app {
+
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.try-app-title {
+    color: $bg-gray-color;
+    background-color: $txt-gray-color;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+.try-app-btn {
+    flex:1;
+    font-size: 2em;
+    text-decoration: none;
+    color: $txt-gray-color;
+    text-shadow: 0 4px 3px black;
+    background-color: $input-color;
+    padding: 25px;
+    text-align: center;
+}
