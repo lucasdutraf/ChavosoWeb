@@ -141,13 +141,16 @@ input {
 
 .try-the-app {
 
-    width: 50%;
+    width: 55%;
     margin: auto;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    @media screen and (max-width: 1115px){
+        flex-flow: column;
+    }
 }
 
 .try-app-title {
@@ -155,6 +158,9 @@ input {
     background-color: $txt-gray-color;
     padding: 30px;
     font-size: 1.5em;
+    @media screen and (max-width: 1115px){
+        width: 100%;
+    }
 }
 
 .try-app-btn {
@@ -166,4 +172,7 @@ input {
     background-color: $input-color;
     padding: 25px;
     text-align: center;
+    @media screen and (max-width: 1115px){
+        width: 100%;
+    }
 }
