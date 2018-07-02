@@ -4,6 +4,7 @@ $bg-gray-color: #2F2E33;
 $txt-gray-color: rgb(158, 162, 173);
 $input-color: rgba(73, 73, 73, 0.4);
 $border-gray-color: rgb(124, 124, 124);
+$gray-hover: rgba(141, 141, 141, 0.4);
 
 body {
     background-color: $bg-gray-color;
@@ -100,6 +101,11 @@ body {
     }
 }
 
+.devise-form-btn:hover {
+
+    color: #fff;
+    background-color: $gray-hover;      
+}
 
 .sign-up-link, .log-in-link , .forgot-pass-link {
     color: $txt-gray-color;
@@ -119,6 +125,10 @@ body {
     }
     @media screen and (max-width: 990px){
         width: 300px;
+    }
+    &:hover {
+        color: #fff;
+        background-color: $gray-hover;
     }
 }
 
@@ -175,4 +185,9 @@ input {
     @media screen and (max-width: 1115px){
         width: 100%;
     }
+    &:hover {
+        color: #fff;
+        background-color: $gray-hover;
+    }
 }
+
