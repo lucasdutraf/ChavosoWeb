@@ -1,0 +1,9 @@
+<h1>Editing Hair</h1>
+
+<%= render 'form', hair: @hair %>
+
+<%= link_to 'Show', @hair %> |
+<%= link_to 'Back', hairs_path %>
+<li>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+</li>
