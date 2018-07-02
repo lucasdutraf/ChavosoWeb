@@ -8,12 +8,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   protected
 
   def after_sign_up_path_for(resource)
-    if
-        '/hairs'
-    else
-
-    end
-
+    '/hairs'
   end
 
   # GET /resource/sign_up
