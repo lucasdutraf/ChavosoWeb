@@ -4,7 +4,6 @@
   <div class="devise"> 
 
     <h2 class="devise-title">Log in</h2>
-
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :email, :class => 'devise-form-label' %><br />
@@ -33,3 +32,8 @@
     <div class="bottom-space"></div>
   </div>
 </section>
+
+<div class="try-the-app">
+  <h1 class="try-app-title">Is this your first time here?</h1>
+  <a href="#" class="try-app-btn">Try the app</a>
+</div>
