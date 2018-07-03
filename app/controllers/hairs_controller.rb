@@ -1,5 +1,5 @@
 class HairsController < ApplicationController
-    
+
   def lenght=(new_lenght)
     @lenght = new_lenght
   end

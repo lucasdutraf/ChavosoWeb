@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get "hairedit" => "hairs#edit"
 
+  put '/changeparams', to: 'hairs#type=(new_type)', as: 'change'
+ 
 end
