@@ -1,0 +1,21 @@
+
+
+$left-logo-gray: #26252B;
+$right-logo-gray: #242329;
+
+.container-try-app {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.logo-img {
+  width: 500px;
+  height: 110px;
+}
+
+
+.top-bar { 
+  background-color: $right-logo-gray;
+  border-bottom: 2px solid rgb(82, 82, 82);;
+}
