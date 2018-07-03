@@ -1,0 +1,33 @@
+
+$left-logo-gray: #26252B;
+$right-logo-gray: #242329;
+$bg-gray-color: #2F2E33;
+$gray-highlight: rgb(82, 82, 82);
+$gray-highlight2: rgb(119, 119, 119);
+$gray-highlight3: rgb(163, 163, 163);
+$txt-gray-color: rgb(158, 162, 173);
+
+.top-bar-profile {
+  position: relative;
+  background-color: $right-logo-gray;
+  border-bottom: 2px solid $gray-highlight;
+}
+
+.profile-logout {
+  position: absolute;
+  right: 100px;
+  top: 35px;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 90%;  
+  background-color: $gray-highlight;
+  padding: 10px;
+  border-radius: 20px;
+  color: $txt-gray-color;
+  text-shadow: 0px 3px 3px black;
+  border: 2px solid $gray-highlight2;
+  
+  &:hover {
+    background-color: $gray-highlight2;
+  }
+}
