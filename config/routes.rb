@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   #redirecting root route to users/sign_up
   root :to => redirect('/users/sign_in')
-  
+
+  get "trytheapp" => "notusers#tryTheApp"
+
 end

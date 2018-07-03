@@ -1,7 +1,7 @@
 
-<img src="/assets/index-logo.jpg" class="chavoso-logo"/>  
+<img src="/assets/index-logo.jpg" class="chavoso-logo"/>
 <section class="devise-bg">
-  <div class="devise"> 
+  <div class="devise">
 
     <h2 class="devise-title">Log in</h2>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -35,5 +35,6 @@
 
 <div class="try-the-app">
   <h1 class="try-app-title">Is this your first time here?</h1>
-  <a href="#" class="try-app-btn">Try the app</a>
+  <!-- <a href="./app/views/notusers/tryTheApp.html.erb" class="try-app-btn">Try the app</a> -->
+  <%= link_to 'Try the app', trytheapp_path, class: 'try-app-btn' %>
 </div>
