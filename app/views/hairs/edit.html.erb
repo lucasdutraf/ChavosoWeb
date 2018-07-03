@@ -1,20 +1,37 @@
-<div class="top-bar-profile">
-  <img src="/assets/logo.jpg" class="logo-img"/> 
-</div>
+<%= form_with(model:Hair, local:true) do |f| %>
+  <% if Hair.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(hair.errors.count, "error") %> prohibited this hair from being saved:</h2>
 
-<h1 class="ht-title">Select your hair type</h1>
+        <ul>
+        <% hair.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+  <% end %>
+  <div class="top-bar-profile">
+    <img src="/assets/logo.jpg" class="logo-img"/>
+  </div>
 
-<div class="icons-panel"> 
-  <img src="/assets/hair_curly.png" class="image-icon"/>
-  <img src="/assets/hair_kinky.png" class="image-icon"/>
-  <img src="/assets/hair_straight.png" class="image-icon"/>
-  <img src="/assets/hair_wavy.png" class="image-icon"/>
-</div>
+  <h1 class="ht-title">Select your hair type</h1>
 
-<h1 class="ht-title">Select your hair length</h1>
+  <div class="icons-panel">
+    <img src="/assets/hair_curly.png" class="image-icon"/>
+    <img src="/assets/hair_kinky.png" class="image-icon"/>
+    <img src="/assets/hair_straight.png" class="image-icon"/>
+    <img src="/assets/hair_wavy.png" class="image-icon"/>
+    <%= f.label :type %>
+    <%= f.text_field :type%>
+    <%= f.label :lenght %>
+    <%= f.text_field :lenght%>
+  </div>
 
-<div class="icons-panel"> 
-  <img src="/assets/length_short.png" class="image-icon"/>
-  <img src="/assets/length_medium.png" class="image-icon"/>
-  <img src="/assets/length_long.png" class="image-icon"/>
-</div>
+  <h1 class="ht-title">Select your hair length</h1>
+
+  <div class="icons-panel">
+    <img src="/assets/length_short.png" class="image-icon"/>
+    <img src="/assets/length_medium.png" class="image-icon"/>
+    <img src="/assets/length_long.png" class="image-icon"/>
+  </div>
+<% end %>
