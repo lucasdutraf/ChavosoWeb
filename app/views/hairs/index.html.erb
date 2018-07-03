@@ -11,20 +11,13 @@
     </tr>
   </thead>
   <tbody>
-    <% @hairs.each do |hair| %>
-      <tr>
-        <td><%= link_to 'Show', hair %></td>
-        <td><%= link_to 'Edit', edit_hair_path(hair) %></td>
-        <td><%= link_to 'Destroy', hair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
   </tbody>
 
   <div class="profile-area"> 
     <div class="user-data">
       <!-- fazer a rederização condicional aqui, para puxar os ico certo-->
       <img class="user-data-icon" src="/assets/null_icon.png" /> 
-      <a class="set-data">Set data</a>
+      <%= link_to 'Set Data', hairedit_path, class: 'set-data' %>
       <img class="user-data-icon" src="/assets/null_icon.png" /> 
     </div>
     <a href="" class="generate-hc">Generate haircuts</a>

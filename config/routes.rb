@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "trytheapp" => "notusers#tryTheApp"
 
+  get "hairedit" => "hairs#edit"
+
 end
