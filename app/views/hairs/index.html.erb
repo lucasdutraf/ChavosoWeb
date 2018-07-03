@@ -1,6 +1,8 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Hairs</h1>
+<div class="top-bar-profile">
+  <img src="/assets/logo.jpg" class="logo-img"/> 
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'profile-logout') %>
+</div>
 
 <table>
   <thead>
@@ -8,7 +10,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @hairs.each do |hair| %>
       <tr>
@@ -18,11 +19,16 @@
       </tr>
     <% end %>
   </tbody>
+
+  <div class="profile-area"> 
+    <div class="user-data">
+      <!-- fazer a rederização condicional aqui, para puxar os ico certo-->
+      <img class="user-data-icon" src="/assets/null_icon.png" /> 
+      <a class="set-data">Set data</a>
+      <img class="user-data-icon" src="/assets/null_icon.png" /> 
+    </div>
+    <a href="" class="generate-hc">Generate haircuts</a>
+  </div>
 </table>
 
-<br>
 
-<%= link_to 'New Hair', new_hair_path %>
-<li>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-</li>
