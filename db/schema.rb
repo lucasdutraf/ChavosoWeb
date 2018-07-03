@@ -13,8 +13,7 @@
 ActiveRecord::Schema.define(version: 2018_07_01_184846) do
 
   create_table "hairs", force: :cascade do |t|
-    t.string "lenght", default: "", null: false
-    t.string "type", default: "", null: false
+    t.string "classification"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
