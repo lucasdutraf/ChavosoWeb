@@ -19,15 +19,6 @@ ActiveRecord::Schema.define(version: 2018_07_01_184846) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "hairs_users", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "hair_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["hair_id"], name: "index_hairs_users_on_hair_id"
-    t.index ["user_id"], name: "index_hairs_users_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
