@@ -2,6 +2,7 @@
 $left-logo-gray: #26252B;
 $right-logo-gray: #242329;
 $bg-gray-color: #2F2E33;
+$bg-gray-profile: rgb(63, 61, 68);
 $gray-highlight: rgb(82, 82, 82);
 $gray-highlight2: rgb(119, 119, 119);
 $gray-highlight3: rgb(163, 163, 163);
@@ -29,5 +30,66 @@ $txt-gray-color: rgb(158, 162, 173);
   
   &:hover {
     background-color: $gray-highlight2;
+    border: 2px solid black;
   }
+}
+
+
+.profile-area {
+  background-color: $bg-gray-color;
+  height: 500px;;
+}
+
+.user-data {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 80px;
+  width: 40%;
+  margin: auto;
+  border: 2px solid $gray-highlight;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.set-data {
+  font-size: 25px;
+  color: $txt-gray-color;
+  text-shadow: 0px 2px 2px black;
+  background-color: $gray-highlight;
+  border-radius: 20px;
+  border: 2px solid $gray-highlight2;
+  padding: 20px;
+  &:hover {
+    background-color: $gray-highlight2;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+.user-data-icon {
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+}
+
+.generate-hc {
+  text-decoration: none;
+  font-size: 25px;
+  color: $txt-gray-color;
+  text-shadow: 0px 2px 2px black;
+  background-color: $gray-highlight;
+  border-radius: 20px;
+  border: 2px solid $gray-highlight2;
+  padding: 20px;
+  &:hover {
+    background-color: $gray-highlight2;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  margin-left: 45%;
+}
+
+body {
+  background-color: $bg-gray-profile;
 }
