@@ -1,0 +1,2 @@
+class NotusersController < ApplicationController
+end

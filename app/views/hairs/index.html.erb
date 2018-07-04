@@ -1,0 +1,28 @@
+<div class="top-bar-profile">
+  <img src="/assets/logo.jpg" class="logo-img"/>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'profile-logout') %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+
+  <div class="profile-area">
+    <div class="user-data">
+      <!-- fazer a rederização condicional aqui, para puxar os ico certo-->
+      <img class="user-data-icon" src="/assets/null_icon.png" /> 
+      <img class="user-data-icon" src="/assets/null_icon.png" /> 
+    </div>
+    
+    <%= link_to 'Set Data', hairedit_path, class: 'generate-hc' %>
+    <%= link_to 'short straight', comb1_path, class: 'generate-hc' %>
+    <%= link_to 'medium kinky', comb2_path, class: 'generate-hc' %>
+    <%= link_to 'long wavy', comb3_path, class: 'generate-hc' %>
+
+  </div>
+</table>

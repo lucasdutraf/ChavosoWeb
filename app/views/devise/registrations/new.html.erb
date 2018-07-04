@@ -1,0 +1,37 @@
+<link rel="icon" type="image/png" href="assets/barber.png" sizes="32x32" />
+<img src="/assets/index-logo.jpg" class="chavoso-logo"/>   
+<section class="devise-bg">
+  <div class="devise">
+
+    <h2 class="devise-title">Sign up</h2>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label :email, :class => 'devise-form-label'%><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'devise-form-input' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password, :class => 'devise-form-label' %>
+        <% if @minimum_password_length %>
+        
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off", :class => 'devise-form-input' %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation, :class => 'devise-form-label' %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'devise-form-input' %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up", :class => 'devise-form-btn' %>
+      </div>
+    <% end %>
+
+    <div class="top-space"></div>
+    <%= render "devise/shared/links" %>
+    <div class="bottom-space"></div>
+  </div>
+</section>

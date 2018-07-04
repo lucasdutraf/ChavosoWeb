@@ -1,24 +1,27 @@
-# README
+# Chavoso Web
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Versão do Ruby e do framework Rails
+**ruby:** 2.3.3p222
+**rails:** 5.2.0
 
-Things you may want to cover:
+## Baixando o projeto
+```
+$ git clone https://gitlab.com/lucasdutraf/ChavosoWeb.git
+```
 
-* Ruby version
+## Instalando as dependências
+Dentro da pasta do projeto execute:
+```
+$ bundle install
+```
 
-* System dependencies
+## Criando as tabelas para as models
+```
+$ rails db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Executando a aplicação
+```
+$ rails s
+```
+e um servidor com o projeto estará escutando a porta :3000 da sua maquina, então acesse http://localhost:3000/
