@@ -20,14 +20,14 @@ $txt-gray-color: rgb(158, 162, 173);
   top: 35px;
   font-size: 25px;
   text-decoration: none;
-  margin-left: 90%;  
+  margin-left: 90%;
   background-color: $gray-highlight;
   padding: 10px;
   border-radius: 20px;
   color: $txt-gray-color;
   text-shadow: 0px 3px 3px black;
   border: 2px solid $gray-highlight2;
-  
+
   &:hover {
     background-color: $gray-highlight2;
     border: 2px solid black;
@@ -100,4 +100,3 @@ $txt-gray-color: rgb(158, 162, 173);
   margin: auto;
   text-align: center;
 }
-
