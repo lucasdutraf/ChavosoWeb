@@ -11,4 +11,11 @@ Rails.application.routes.draw do
 
   get "hairedit" => "hairs#edit"
 
+  get 'comb1' => "combs#result1"
+
+  get 'comb2' => "combs#result2"
+
+  get 'comb3' => "combs#result3"
+
+
 end
