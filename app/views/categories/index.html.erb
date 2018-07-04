@@ -15,10 +15,10 @@
   <div class="profile-area">
     <div class="user-data">
       <!-- fazer a rederização condicional aqui, para puxar os ico certo-->
-      <img class="user-data-icon" src="/assets/null_icon.png" /> 
-      <img class="user-data-icon" src="/assets/null_icon.png" /> 
+      <img class="user-data-icon" src="/assets/length_long.png" />
+      <img class="user-data-icon" src="/assets/length_medium.png" />
     </div>
-    
+
     <%= link_to 'Set Data', hairedit_path, class: 'generate-hc' %>
     <%= link_to 'short straight', comb1_path, class: 'generate-hc' %>
     <%= link_to 'medium kinky', comb2_path, class: 'generate-hc' %>
@@ -26,3 +26,18 @@
 
   </div>
 </table>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>

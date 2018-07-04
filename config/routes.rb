@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :categories
   resources :hairs
   devise_for :users, controllers: {sessions: 'devise/sessions'}
 
@@ -9,5 +10,12 @@ Rails.application.routes.draw do
   get "trytheapp" => "notusers#tryTheApp"
 
   get "hairedit" => "hairs#edit"
+
+  get 'comb1' => "combs#result1"
+
+  get 'comb2' => "combs#result2"
+
+  get 'comb3' => "combs#result3"
+
 
 end
