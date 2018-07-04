@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+<div class="top-bar-profile">
+  <img src="/assets/logo.jpg" class="logo-img"/>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => 'profile-logout') %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+
+  <div class="profile-area">
+    <div class="user-data">
+      <!-- fazer a rederização condicional aqui, para puxar os ico certo-->
+      <img class="user-data-icon" src="/assets/null_icon.png" />
+      <%= link_to 'Set Data', hairedit_path, class: 'set-data' %>
+      <img class="user-data-icon" src="/assets/null_icon.png" />
+    </div>
+    <a href="" class="generate-hc">Generate haircuts</a>
+  </div>
+</table>
+<h1>Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Category', new_category_path %>

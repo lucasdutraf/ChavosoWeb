@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :categories
   resources :hairs
   devise_for :users, controllers: {sessions: 'devise/sessions'}
 
