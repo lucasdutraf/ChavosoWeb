@@ -26,6 +26,6 @@ $ rails s
 ```
 e um servidor com o projeto estará escutando a porta :3000 da sua maquina, então acesse http://localhost:3000/
 
-##Autores
+## Autores
   - Lucas Dutra Ferreira do Nascimento 17/0050939
   - Youssef Muhamad Yacoub Falaneh 17/0024334 
